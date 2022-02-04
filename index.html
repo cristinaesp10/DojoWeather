@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DojoWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- main header with blue background -->
+        <div class="navbar">
+            <h1>DojoWeather</h1>
+            <ul>
+                <li onclick="loading(this)" >Burbank</li>
+                <li onclick="loading(this)">Chicago</li>
+                <li onclick="loading(this)">Dallas</li>
+            </ul>
+        </div>
+        <!-- header for daily weather of main city -->
+        <div class="mainCity">
+            <h2>San Jose</h2>
+            <div class="temp">
+                <p>Show temperature in </p>
+                <select name="temperature" id="temperature">
+                    <option>*C</option>
+                    <option>*F</option>
+                </select>
+            </div>
+        </div>
+        <!-- one div containing 4 divs for days of the week -->
+        <div class="weather">
+            <!-- invidual weather days -->
+            <div class="daily">
+                <h2>Today</h2>
+                <img src="./assets/some_rain.png" alt="Rainy">
+                <p>some rain</p>
+                <div class="highlow">
+                    <span style="color:red" id="temp1">24*</span><span style="color:blue" id="temp2">18*</span>
+                </div>
+            </div>
+            <div class="daily">
+                <h2>Tomorrow</h2>
+                <img src="./assets/some_sun.png" alt="Sunny">
+                <p>some sun</p>
+                <div class="highlow">
+                    <span style="color:red" id="temp3">27*</span><span style="color:blue" id="temp4">19*</span>
+                </div>
+            </div>
+            <div class="daily">
+                <h2>Friday</h2>
+                <img src="./assets/some_clouds.png" alt="Cloudy">
+                <p>some clouds</p>
+                <div class="highlow">
+                    <span style="color:red" id="temp5">21*</span><span style="color:blue"vid="temp6">16*</span>
+                </div>
+            </div>
+            <div class="daily">
+                <h2>Saturday</h2>
+                <img src="./assets/some_sun.png" alt="Sunny">
+                <p>some sun</p>
+                <div class="highlow">
+                    <span style="color:red" id="temp7">26*</span><span style="color:blue" id="temp8">21*</span>
+                </div>
+            </div>
+        </div>
+        <!-- cookie box container -->
+        <div class="cookie" id="cookie">
+            <img src="./assets/cookie.png" alt="cookie">
+            <div class="warning">
+                <h2>Stop! Cookie time</h2>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button onclick="hide()" >I Accept</button>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

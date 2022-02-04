@@ -1,0 +1,91 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(84, 202, 202);
+    color: white;
+    justify-content: space-between;
+    padding: 15px 130px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar li {
+    padding: 0px 10px;
+}
+
+.mainCity {
+    margin: 0px 130px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+}
+
+.temp {
+    display: flex;
+}
+
+.mainCity p {
+    padding-right: 5px;
+}
+
+.weather {
+    display: flex;
+    margin: 5px 130px;
+}
+
+.daily {
+    height: 200px;
+    width: 300px;
+    margin: 5px;
+    background-color: lightgrey;
+    text-align: center;
+    padding: 40px 10px 70px 10px;
+}
+
+.daily img {
+    height: 120px;
+    border-radius: 50%;
+    margin: 10px 0px;
+}
+
+.highlow {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px 0px 10px ;
+}
+
+.cookie {
+    border: 5px solid black;
+    background-color: white;
+    display: flex;
+    margin: 0px 130px;
+    padding: 20px;
+    align-items: center;
+    position: fixed;
+    bottom: 180px;
+    /* height: 600px; */
+
+}
+
+.cookie img {
+    height: 70px;
+}
+
+.cookie button {
+    width: 120px;
+    height: 40px;
+    background-color: lightsteelblue;
+    box-shadow: 3px 3px black;
+}
